@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const App = () => {
   // Initialize theme from localStorage or system preference
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <div className="bg-white dark:bg-black relative">
       <Navbar theme={theme} setTheme={setTheme} />
+      <Hero />
     </div>
   );
 };
