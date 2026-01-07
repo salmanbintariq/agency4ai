@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustedBy from "./components/TrustedBy";
+import Services from "./components/Services";
 
 const App = () => {
   // Initialize theme from localStorage or system preference
@@ -28,6 +29,7 @@ const App = () => {
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
       <TrustedBy />
+      <Services />
     </div>
   );
 };
